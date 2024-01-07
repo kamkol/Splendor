@@ -1,5 +1,8 @@
-package repository;
+package com.splendor.repository;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class Card {
 	
 	private int cardLevel;

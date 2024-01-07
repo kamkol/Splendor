@@ -1,4 +1,4 @@
-package repository;
+package com.splendor.repository;
 
 public class AristorcratCard {
 	

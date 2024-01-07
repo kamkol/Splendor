@@ -1,4 +1,4 @@
-package dto;
+package com.splendor.dto;
 
 public class GameDetails {
 	

@@ -1,8 +1,18 @@
-package repository;
+package com.splendor.repository;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import jakarta.annotation.Generated;
+
+@Entity
 public class User {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+	
+	@NotBlank
     private String name;
     private int points=0;
     
