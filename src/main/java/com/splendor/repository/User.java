@@ -1,11 +1,9 @@
 package com.splendor.repository;
-
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-import jakarta.annotation.Generated;
+import com.splendor.User;
 
-@Entity
+@EntityScan("com.splendor")
 public class User {
 	
 	@Id
