@@ -9,8 +9,10 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 	
+	@NotBlank
 	private String name;
 	
+	@NotNull
     private int points=0;
     
 	public Long getId() {
