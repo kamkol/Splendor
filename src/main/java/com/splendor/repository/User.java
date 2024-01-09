@@ -2,16 +2,15 @@ package com.splendor.repository;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
-@EntityScan("com.splendor")
+@EntityScan("com.splendor.User")
 public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 	
-	@NotBlank
-    private String name;
-	@NotNull
+	private String name;
+	
     private int points=0;
     
 	public Long getId() {
