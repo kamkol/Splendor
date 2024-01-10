@@ -3,7 +3,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
 @EntityScan("com.splendor.User")
-public class User {
+public class Player {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
