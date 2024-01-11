@@ -8,12 +8,13 @@ import com.splendor.repository.Player;
 public class Game {
 	
 	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@OneToMany
+//	@OneToMany
 	private List<Player> players;
 	
-	@OneToMany
+//	@OneToMany
 	private List<Card> availableCards;
 	
 }
