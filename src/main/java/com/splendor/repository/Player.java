@@ -11,7 +11,6 @@ public class Player {
 	
 	@NotBlank
 	private String name;
-	
 	@NotNull
     private int points=0;
     
