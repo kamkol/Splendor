@@ -5,6 +5,7 @@ import java.util.List;
 import com.splendor.repository.Card;
 import com.splendor.repository.Player;
 
+@Entity
 public class Game {
 	
 	@Id

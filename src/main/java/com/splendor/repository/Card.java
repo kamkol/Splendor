@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import jakarta.annotation.Generated;
 
-@EntityScan
+@EntityScan("com.splendor")
+@Entity
 public class Card {
 	
 	@Id
