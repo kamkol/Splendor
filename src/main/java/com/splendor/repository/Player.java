@@ -4,14 +4,9 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @EntityScan("com.splendor.User")
 public class Player {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-	
-	@NotBlank
 	private String name;
-	@NotNull
     private int points=0;
     
 	public Long getId() {

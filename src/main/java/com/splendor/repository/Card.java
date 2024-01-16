@@ -7,11 +7,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import jakarta.annotation.Generated;
 
 @EntityScan("com.splendor")
-@Entity
 public class Card {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private int cardLevel;
