@@ -8,9 +8,4 @@ import com.splendor.service.GameService;
 @RequestMapping
 public class GameController {
 	
-	private final GameService gameService;
-	
-	public GameController(GameService gameService) {
-		this.gameService = gameService;
-	}
 }
