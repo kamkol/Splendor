@@ -1,9 +1,15 @@
 package com.splendor.repository;
 
+import java.lang.reflect.GenericArrayType;
+
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@EntityScan
+import jakarta.annotation.Generated;
+
+@EntityScan("com.splendor")
 public class Card {
+	
+	private Long id;
 	
 	private int cardLevel;
 	private int costCard;
