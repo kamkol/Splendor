@@ -9,6 +9,7 @@ public class GameDetails {
 	private int numberOfPlayer;
 	private int tokens;
 	
+	
 	public String getPlayerName() {
 		return playerName;
 	}
