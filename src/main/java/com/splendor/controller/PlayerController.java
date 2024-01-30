@@ -6,17 +6,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+
 import com.splendor.service.PlayerService;
 
 public class PlayerController {
 	
-//	@Autowired
+	@Autowired
 	private PlayerService playerService;
 	
-	@PostMapping
-	public ResponseEntity<String> addGreenTokens(@PathVariable playerId, @PathVariable int tokensToAdd) {
+	@PostMapping("/{playerId}/add-green-tokens/{tokensToAdd}")
+	public ResponseEntity<String> addGreenTokens(@PathVariable Long playerId, @PathVariable int tokensToAdd) {
 		playerService.addGreenTokens(playerId, tokensToAdd);
-		return ResponseEntity.ok("Green tokens added successfully")
+		return ResponseEntity.ok("Green tokens added successfully");
 	}
 	
 }
