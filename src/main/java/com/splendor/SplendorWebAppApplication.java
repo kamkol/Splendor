@@ -11,7 +11,7 @@ public class SplendorWebAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SplendorWebAppApplication.class, args);
-		
+//		
 	}
 
 }
