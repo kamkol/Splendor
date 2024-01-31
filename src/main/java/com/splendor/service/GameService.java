@@ -11,8 +11,8 @@ public class GameService {
 	@Autowired
 	private GameDetails gameDetails;
 	
-	public Game gameById(Long game) {
-		return gameDetails.findById(gameId).orElse(null);
-	}
+//	public Game gameById(Long game) {
+//		return gameDetails.findById(gameId).orElse(null);
+//	}
 
 }
