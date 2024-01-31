@@ -10,7 +10,7 @@ import com.splendor.service.PlayerService;
 
 public class PlayerController {
 	
-	@Autowired
+//	@Autowired
 	private PlayerService playerService;
 	
 	@PostMapping
