@@ -8,5 +8,15 @@
     <h1>Welcome to Splendor Game</h1>
     <h2>Start game here</h2>
     <p th:text="${message}"></p>
+    <h3>Add Green Tokens</h3>
+    <form action="#" th:action="@{/add-green-tokens/{playerId}/{tokensToAdd}" th:object="${playerForm}" method="post">
+        <label for="playerId">Player ID:</label>
+        <input type="text" id="playerId" name="playerId" th:field="*{playerId}" required><br>
+        
+        <label for="tokensToAdd">Tokens to Add:</label>
+        <input type="text" id="tokensToAdd" name="tokensToAdd" th:field="*{tokensToAdd}" required><br>
+        
+        <button type="submit">Add Tokens</button>
+    </form>
 </body>
 </html>
