@@ -1,8 +1,6 @@
 package com.splendor.repository;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@EntityScan
 public class GameDetails {
 	
 	private String playerName;

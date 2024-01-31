@@ -8,9 +8,9 @@ import com.splendor.repository.GameDetails;
 @Service
 public class GameService {
 	
-	@Autowired
-	private GameDetails gameDetails;
-	
+//	@Autowired
+//	private GameDetails gameDetails;
+//	
 //	public Game gameById(Long game) {
 //		return gameDetails.findById(gameId).orElse(null);
 //	}
