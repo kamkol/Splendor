@@ -6,6 +6,8 @@ public class GameDetails {
 	private String playerName;
 	private int numberOfPlayer;
 	private int tokens;
+	private Long gameId;
+	private int rounds;
 	
 	
 	public String getPlayerName() {
@@ -25,6 +27,12 @@ public class GameDetails {
 	}
 	public void setTokens(int tokens) {
 		this.tokens = tokens;
+	}
+	public Long getGameId() {
+		return gameId;
+	}
+	public void setGameId(Long gameId) {
+		this.gameId = gameId;
 	}
 
 }

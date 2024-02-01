@@ -1,18 +1,17 @@
 package com.splendor.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.splendor.repository.GameDetails;
+import com.splendor.repository.Game;
+
 
 @Service
 public class GameService {
 	
-//	@Autowired
-//	private GameDetails gameDetails;
-//	
-//	public Game gameById(Long game) {
-//		return gameDetails.findById(gameId).orElse(null);
-//	}
+	public Game createGame() {
+		Game game = new Game();
+		return game;
+	}
+	
 
 }
