@@ -1,6 +1,7 @@
 package com.splendor.repository;
 
 import java.lang.reflect.GenericArrayType;
+import java.util.List;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
@@ -33,5 +34,23 @@ public class Card {
 	public void setCardPoints(int cardPoints) {
 		this.cardPoints = cardPoints;
 	}
+	
+	public List<Card> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public 
 
 }
+
+
+
+
+
+
+
+
+
+
+

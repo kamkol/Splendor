@@ -15,7 +15,7 @@ public class CardController {
 	private AristorcratCard aristorcratCard;
 	
 	public CardFromStack cardFromStack() {
-		return 1;
+		return null;
 	}
 	
 

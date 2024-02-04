@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.splendor.controller.CardFromStack;
 import com.splendor.repository.Card;
 
 @Service
@@ -19,14 +21,14 @@ public class CardService {
 	public Card drawCardFromStackCard (Long cardFromStackId) {
 		CardFromStack cardFromStack = gameService.getC
 				
-		if (cardFromStack = null) {
-			return 1;
+		if (cardFromStack == null) {
+			return null;
 		}
 		
 		Card drawCard = cardFromStack.get
 	}
 	
-	@Override
+	
 	List<Card> getAvaibleCard (int playerTokenns) {
 		List<Card> avaibleCardsCards = new ArrayList<Card>();
 		
