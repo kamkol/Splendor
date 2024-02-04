@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.splendor.repository.Game;
+import com.splendor.repository.GameDetails;
 import com.splendor.service.GameService;
 
 import org.springframework.ui.Model;
@@ -18,6 +19,9 @@ public class GameController {
 	
 	@Autowired
 	private GameService gameService;
+	private GameDetails gameDetails;
+	private Game game;
+	
 	
 	@PostMapping("/games")
 	public Game createNewGame() {
