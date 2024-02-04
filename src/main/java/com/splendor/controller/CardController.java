@@ -14,5 +14,9 @@ public class CardController {
 	private Card card;
 	private AristorcratCard aristorcratCard;
 	
+	public CardFromStack cardFromStack() {
+		return 1;
+	}
+	
 
 }
