@@ -18,14 +18,14 @@ public class CardService {
 	@Autowired
 	private GameService gameService;
 	
-	public Card drawCardFromStackCard (Long cardFromStackId) {
-		CardFromStack cardFromStack = gameService.getC
+	public Card drawCardFromStack (Long cardFromStackId) {
+		CardFromStack cardFromStack = gameService.getCardFromStackId(cardFromStackId);
+		
 				
 		if (cardFromStack == null) {
 			return null;
 		}
 		
-		Card drawCard = cardFromStack.get
 	}
 	
 	
