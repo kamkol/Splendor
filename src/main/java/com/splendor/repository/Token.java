@@ -6,6 +6,12 @@ public class Token {
 	private String type;
 	private int numberOfToken;
 	private int maxNumberOfToken;
+	private TokenColor tokenColor;
+	
+	public Token(TokenColor tokenColor, Long id) {
+		this.setTokenColor(tokenColor);
+		this.id = id;
+	}
 	
 	public Long getId() {
 		return id;
@@ -30,6 +36,14 @@ public class Token {
 	}
 	public void setMaxNumberOfToken(int maxNumberOfToken) {
 		this.maxNumberOfToken = maxNumberOfToken;
+	}
+
+	public TokenColor getTokenColor() {
+		return tokenColor;
+	}
+
+	public void setTokenColor(TokenColor tokenColor) {
+		this.tokenColor = tokenColor;
 	}
 
 }
