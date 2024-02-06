@@ -30,6 +30,11 @@ public class TokenController {
 	private List<Token> generateTokens() {
 		List<Token> tokens = new ArrayList<Token>();
 		tokens.add(new Token(TokenColor.BLUE, 1));
+		tokens.add(new Token(TokenColor.BROWN, 2));
+		tokens.add(new Token(TokenColor.GREEN, 3));
+		tokens.add(new Token(TokenColor.RED, 4));
+		tokens.add(new Token(TokenColor.WHITE, 5));
+		tokens.add(new Token(TokenColor.YELLOW, 6));
 		return tokens;
 	}
 	
