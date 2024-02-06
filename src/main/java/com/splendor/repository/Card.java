@@ -38,9 +38,7 @@ public class Card {
 	public List<Card> findAll() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-	
-	public 
+	} 
 
 }
 
