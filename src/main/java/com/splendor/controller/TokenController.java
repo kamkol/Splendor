@@ -19,7 +19,6 @@ public class TokenController {
 	@Autowired
 	private	TokenService tokenService;
 	
-	
 	@GetMapping
 	public String generateTokensModel(Model model) {
 		List<Token> tokens = generateTokens();

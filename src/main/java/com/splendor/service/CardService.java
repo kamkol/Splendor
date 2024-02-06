@@ -18,28 +18,28 @@ public class CardService {
 	@Autowired
 	private GameService gameService;
 	
-	public Card drawCardFromStack (Long cardFromStackId) {
-		CardFromStack cardFromStack = gameService.getCardFromStackId(cardFromStackId);
-		
-		if (cardFromStack == null) {
-			return null;
-		}
-		
-	}
-	
-	
-	List<Card> getAvaibleCard (int playerTokenns) {
-		List<Card> avaibleCardsCards = new ArrayList<Card>();
-		
-		List<Card> allCards = card.findAll();
-		
-		for(Card card : allCards) {
-			if(card.getCost() <= playerTokenns) {
-				avaibleCardsCards.add(card);
-			}
-		}
-		return avaibleCardsCards;
-	}
+//	public Card drawCardFromStack (Long cardFromStackId) {
+//		CardFromStack cardFromStack = gameService.getCardFromStackId(cardFromStackId);
+//		
+//		if (cardFromStack == null) {
+//			return null;
+//		}
+//		
+//	}
+//	
+//	
+//	List<Card> getAvaibleCard (int playerTokenns) {
+//		List<Card> avaibleCardsCards = new ArrayList<Card>();
+//		
+//		List<Card> allCards = card.findAll();
+//		
+//		for(Card card : allCards) {
+//			if(card.getCost() <= playerTokenns) {
+//				avaibleCardsCards.add(card);
+//			}
+//		}
+//		return avaibleCardsCards;
+//	}
 	
 	
 }
