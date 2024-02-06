@@ -12,10 +12,10 @@ import com.splendor.repository.Card;
 @Service
 public class CardService {
 	
-	@Autowired
+//	@Autowired
 	private Card card;
 	
-	@Autowired
+//	@Autowired
 	private GameService gameService;
 	
 //	public Card drawCardFromStack (Long cardFromStackId) {

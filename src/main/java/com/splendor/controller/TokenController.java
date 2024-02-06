@@ -19,7 +19,7 @@ public class TokenController {
 	
 	private	TokenService tokenService;
 	
-	@GetMapping
+	@GetMapping("/")
 	public String generateTokensModel(Model model) {
 		List<Token> tokens = generateTokens();
 		model.addAttribute("tokens", tokens);
