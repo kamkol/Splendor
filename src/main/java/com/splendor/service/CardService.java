@@ -21,7 +21,6 @@ public class CardService {
 	public Card drawCardFromStack (Long cardFromStackId) {
 		CardFromStack cardFromStack = gameService.getCardFromStackId(cardFromStackId);
 		
-				
 		if (cardFromStack == null) {
 			return null;
 		}
