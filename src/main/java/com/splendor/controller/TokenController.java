@@ -16,7 +16,7 @@ import com.splendor.repository.Token;
 @RequestMapping("/tokens")
 public class TokenController {
 	
-	@Autowired
+	
 	private	TokenService tokenService;
 	
 	@GetMapping
