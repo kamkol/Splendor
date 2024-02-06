@@ -10,12 +10,13 @@ public class TokenService {
 	
 	private TokenController tokenController;
 	
-	private List<Token> getAllTokens() {
-		return userTokens;
+	public List<Token> getAllTokens() {
+//		return userTokens;
+		return null;
 	}
 	
 	public void saveTokens(List<Token> tokens) {
-		userTokens.addAll(tokens);
+//		userTokens.addAll(tokens);
 	}
 
 }

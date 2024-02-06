@@ -3,14 +3,14 @@ package com.splendor.repository;
 public class Token {
 	
 	private Long id;
-	private String type;
 	private int numberOfToken;
 	private int maxNumberOfToken;
 	private TokenColor tokenColor;
+	private int value;
 	
-	public Token(TokenColor tokenColor, Long id) {
+	public Token(TokenColor tokenColor, int value) {
 		this.setTokenColor(tokenColor);
-		this.id = id;
+		this.value = value;
 	}
 	
 	public Long getId() {
@@ -18,12 +18,6 @@ public class Token {
 	}
 	public void setId(Long id) {
 		this.id = id;
-	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
 	}
 	public int getNumberOfToken() {
 		return numberOfToken;
@@ -44,6 +38,14 @@ public class Token {
 
 	public void setTokenColor(TokenColor tokenColor) {
 		this.tokenColor = tokenColor;
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
 	}
 
 }

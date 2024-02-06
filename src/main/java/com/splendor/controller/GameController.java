@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.splendor.repository.Game;
 import com.splendor.repository.GameDetails;
+import com.splendor.repository.TokenColor;
 import com.splendor.service.GameService;
 
 import ch.qos.logback.core.subst.Token;
@@ -37,20 +38,6 @@ public class GameController {
 	public String gamePage(Model model) {
 		model.addAttribute("message", "Splendor game!");
 		return "game";
-	}
-	
-	@GetMapping
-	public String generateTokensModel(Model model) {
-		List<Token> tokens = generateTokens();
-		model.addAttribute("tokens", tokens);
-		return "game";
-	}
-	
-	private List<Token> generateTokens() {
-		List<Token> tokens = new ArrayList<Token>();
-		tokens.add(new Token("Red", 1));
-		tokens.add(new Token("Blue", 2));
-		return tokens;
 	}
 	
 }
