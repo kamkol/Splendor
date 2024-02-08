@@ -35,7 +35,6 @@ public class TokenController {
 		tokens.add(new Token(TokenColor.WHITE, 5));
 		tokens.add(new Token(TokenColor.YELLOW, 6));
 		return tokens;
-		
 	}
 	
 
