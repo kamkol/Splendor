@@ -1,9 +1,7 @@
 package com.splendor.service;
 
 import java.util.List;
-
 import com.splendor.controller.TokenController;
-
 import ch.qos.logback.core.subst.Token;
 
 public class TokenService {
