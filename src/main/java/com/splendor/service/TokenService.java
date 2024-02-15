@@ -26,6 +26,7 @@ public class TokenService {
     public void addGreenTokens(String playerId, int tokensToAdd) {
         Player player = player.findById(playerId);
         player.addGreenTokens(tokensToAdd);
+        
         player.save(player);
     }
 
