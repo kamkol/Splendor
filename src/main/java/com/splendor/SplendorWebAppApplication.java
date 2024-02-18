@@ -9,8 +9,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 public class SplendorWebAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SplendorWebAppApplication.class, args);
-//		
+		SpringApplication.run(SplendorWebAppApplication.class, args);	
 	}
 
 }
