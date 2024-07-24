@@ -1,4 +1,4 @@
-package com.splendor.repository;
+package com.splendor.entity;
 
 public enum TokenColor {
 	GREEN,
