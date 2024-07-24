@@ -1,4 +1,4 @@
-package com.splendor.service;
+package com.splendor.repository;
 
 public interface CardRepository {
 
