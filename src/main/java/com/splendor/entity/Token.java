@@ -1,17 +1,19 @@
-package com.splendor.repository;
+package com.splendor.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Token {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private int numberOfToken;
 	private int maxNumberOfToken;
 	private TokenColor tokenColor;
-	private int value;
-	
-	public Token(TokenColor tokenColor, int value) {
-		this.setTokenColor(tokenColor);
-		this.value = value;
-	}
 	
 	public Long getId() {
 		return id;
@@ -38,14 +40,6 @@ public class Token {
 
 	public void setTokenColor(TokenColor tokenColor) {
 		this.tokenColor = tokenColor;
-	}
-
-	public int getValue() {
-		return value;
-	}
-
-	public void setValue(int value) {
-		this.value = value;
 	}
 
 }
