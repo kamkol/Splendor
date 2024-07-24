@@ -22,12 +22,12 @@ public class TokenService {
 	}
 	
 	
-    @Autowired
-    public void addGreenTokens(String playerId, int tokensToAdd) {
-        Player player = player.findById(playerId);
-        player.addGreenTokens(tokensToAdd);
-        
-        player.save(player);
-    }
+//    @Autowired
+//    public void addGreenTokens(String playerId, int tokensToAdd) {
+//        Player player = player.findById(playerId);
+//        player.addGreenTokens(tokensToAdd);
+//        
+//        player.save(player);
+//    }
 
 }
