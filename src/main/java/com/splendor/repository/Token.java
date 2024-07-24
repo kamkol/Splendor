@@ -6,12 +6,6 @@ public class Token {
 	private int numberOfToken;
 	private int maxNumberOfToken;
 	private TokenColor tokenColor;
-	private int value;
-	
-	public Token(TokenColor tokenColor, int value) {
-		this.setTokenColor(tokenColor);
-		this.value = value;
-	}
 	
 	public Long getId() {
 		return id;
@@ -38,14 +32,6 @@ public class Token {
 
 	public void setTokenColor(TokenColor tokenColor) {
 		this.tokenColor = tokenColor;
-	}
-
-	public int getValue() {
-		return value;
-	}
-
-	public void setValue(int value) {
-		this.value = value;
 	}
 
 }
