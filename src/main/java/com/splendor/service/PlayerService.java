@@ -1,10 +1,8 @@
 package com.splendor.service;
 
-import java.util.List;
-import com.splendor.entity.Player;
+import org.springframework.stereotype.Service;
 
-public interface PlayerService {
+@Service
+public class PlayerService {
 
-	List<Player> findAll();
-	
 }
