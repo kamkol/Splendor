@@ -9,6 +9,5 @@ import com.splendor.service.GameService;
 @RequestMapping("/splendor")
 public class GameController {
 
-	private GameService
 	
 }
