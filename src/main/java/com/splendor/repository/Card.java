@@ -6,7 +6,6 @@ import java.util.List;
 public class Card {
 	
 	private Long id;
-	
 	private int cardLevel;
 	private int costCard;
 	private int cardPoints;
