@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Game</title>
+</head>
+<body>
+    <h1>Game Board</h1>
+    
+    <div th:each="token : ${tokens}">
+        <div th:text="${token.color} + ' Token'"></div>
+        <button th:text="'Take ' + ${token.color} + ' Token'"></button>
+        <br/>
+    </div>
+</body>
+</html>
