@@ -12,10 +12,10 @@ import com.splendor.repository.Card;
 @Service
 public class CardService {
 	
-	@Autowired
+//	@Autowired
 	private Card card;
 	
-	@Autowired
+//	@Autowired
 	private GameService gameService;
 	
 //	public Card drawCardFromStack (Long cardFromStackId) {
@@ -26,8 +26,13 @@ public class CardService {
 //		}
 //		
 //	}
+<<<<<<< HEAD
 	
 	
+=======
+//	
+//	
+>>>>>>> e7f6ead2eb67c48832ae8088424c3cef6abaf515
 //	List<Card> getAvaibleCard (int playerTokenns) {
 //		List<Card> avaibleCardsCards = new ArrayList<Card>();
 //		

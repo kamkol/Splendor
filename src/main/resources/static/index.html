@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Page Title</title>
+    <title>Game</title>
 </head>
-
 <body>
-
-	<h1>This is a Heading</h1>
-	<p>This is a paragraph.</p>
-
+    <h1>Game Board</h1>
+    
+    <div th:each="token : ${tokens}">
+        <div th:text="${token.color} + ' Token'"></div>
+        <button th:text="'Take ' + ${token.color} + ' Token'"></button>
+        <br/>
+    </div>
 </body>
-
 </html>

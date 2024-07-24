@@ -1,13 +1,8 @@
 package com.splendor.repository;
 
-import java.lang.reflect.GenericArrayType;
 import java.util.List;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-import jakarta.annotation.Generated;
-
-@EntityScan("com.splendor")
 public class Card {
 	
 	private Long id;
@@ -16,6 +11,13 @@ public class Card {
 	private int costCard;
 	private int cardPoints;
 	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public int getCardLevel() {
 		return cardLevel;
 	}

@@ -1,8 +1,6 @@
 package com.splendor.repository;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
-@EntityScan("com.splendor.User")
 public class Player {
 
     private Long id;
