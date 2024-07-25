@@ -1,10 +1,12 @@
 package com.splendor.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import com.splendor.entity.Game;
+import java.util.List;
 
-public interface GameRepository extends JpaRepository<Game, Long>{
+import com.splendor.entity.Player;
 
+public interface GameRepository{
+
+	void startNewGame();
 	
-	
+	List<Player> findAllPlayers();
 }
