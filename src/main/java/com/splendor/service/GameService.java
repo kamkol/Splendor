@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.splendor.entity.Game;
-import com.splendor.entity.Player;
 import com.splendor.repository.CardRepository;
 import com.splendor.repository.GameRepository;
 import com.splendor.repository.PlayerRepository;
@@ -31,6 +30,8 @@ public class GameService {
 		// TODO Auto-generated method stub
 		//start new game
 		Game newGame = new Game();
+		
+		gameRepository.save(newGame);
 		
 	}
 	
