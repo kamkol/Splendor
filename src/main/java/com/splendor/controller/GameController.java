@@ -16,7 +16,7 @@ import jakarta.persistence.EntityManager;
 
 @RestController
 @RequestMapping("/api/game")
-public class GameController implements GameRepository{
+public class GameController{
 
 	private EntityManager entityManager;
 	
@@ -25,19 +25,8 @@ public class GameController implements GameRepository{
 	public GameController(EntityManager theEntityManager) {
 		entityManager = theEntityManager;
 	}
-	
-	@Override
-	public void startNewGame() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<Player> findAllPlayers() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 
 	
+
+
 }
