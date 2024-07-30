@@ -11,16 +11,13 @@ import com.splendor.repository.PlayerRepository;
 public class GameService {
 	
 	private GameRepository gameRepository;
-//	private PlayerRepository playerRepository;
-//	private CardRepository cardRepository;
 	
 	
 	public GameService(GameRepository gameRepository, PlayerRepository playerRepository,
 			CardRepository cardRepository) {
 		super();
 		this.gameRepository = gameRepository;
-//		this.playerRepository = playerRepository;
-//		this.cardRepository = cardRepository;
+
 	}
 
 
