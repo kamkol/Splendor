@@ -12,7 +12,7 @@ public class Card {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idLong;
 	private String costOfCardString;
-	private int points;
+	private int points=0;
 	
 	public Long getIdLong() {
 		return idLong;
