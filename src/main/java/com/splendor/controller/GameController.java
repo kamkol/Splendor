@@ -16,7 +16,6 @@ public class GameController{
 	private GameService gameService;
 
 	public GameController(GameService gameService) {
-		super();
 		this.gameService = gameService;
 	}
 	

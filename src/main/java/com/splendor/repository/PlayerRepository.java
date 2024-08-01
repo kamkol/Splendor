@@ -8,7 +8,5 @@ import jakarta.persistence.EntityManager;
 
 public interface PlayerRepository extends JpaRepository<Player, Long>{
 
-	Player findfindId();
-	
 	
 }

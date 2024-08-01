@@ -27,6 +27,10 @@ public class Player {
 		this.email = email;
 	}
 	
+	public Player(String name) {
+		this.name = name;
+	}
+	
 	public Long getId() {
 		return id;
 	}
