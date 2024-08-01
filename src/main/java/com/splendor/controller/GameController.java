@@ -34,11 +34,5 @@ public class GameController{
 		List<Player> players = gameService.getAllPlayers();
 		return ResponseEntity.ok(players);
 	}
-	
-//	@GetMapping("/start")
-//	public ResponseEntity<Void> startNewGameGet() {
-//		gameService.startNewGame();
-//		return ResponseEntity.ok().build();
-//	}
 
 }
