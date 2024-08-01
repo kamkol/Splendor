@@ -1,5 +1,6 @@
 package com.splendor.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,9 +11,25 @@ public class Player {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private Long id;
+	@Column(name = "name")
 	private String name;
-	private int totalPoints;
+	@Column(name = "email")
+	private String email;
+	
+	public Player () {}
+	
+	public Player(Long id, String name, String email) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+	}
+	
+	public Player(String name) {
+		this.name = name;
+	}
 	
 	public Long getId() {
 		return id;
@@ -26,12 +43,18 @@ public class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getTotalPoints() {
-		return totalPoints;
+	public String getEmail() {
+		return email;
 	}
-	public void setTotalPoints(int totalPoints) {
-		this.totalPoints = totalPoints;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
+	@Override
+	public String toString() {
+		return "Player [id=" + id + ", "
+				+ "name=" + name + ", "
+				+ "email=" + email + "]";
+	}
 	
 }

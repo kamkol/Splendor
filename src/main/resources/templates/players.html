@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Players</title>
+</head>
+
+<body>
+	<h1>Players</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="player : ${players}">
+				<td th:text="${player.id}"></td>
+				<td th:text="${player.name}"></td>
+				<td th:text="${player.email}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
