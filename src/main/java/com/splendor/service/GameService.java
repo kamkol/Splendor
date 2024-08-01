@@ -41,6 +41,12 @@ public class GameService {
 		Player player2 = new Player("Player 2");
 		return List.of(player1, player2);
 	}
+
+
+	public List<Player> getAllPlayers() {
+		// TODO Auto-generated method stub
+		return playerRepository.findAll();
+	}
 	
 }
 
