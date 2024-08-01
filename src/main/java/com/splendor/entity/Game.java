@@ -13,7 +13,9 @@ public class Game {
 	private Long id;
 	private int numberOfPlayers;
 	private int round;
+	private int playerPoints;
 	
+
 	public Game() {}
 	
 	public Long getId() {
@@ -34,6 +36,12 @@ public class Game {
 	public void setRound(int round) {
 		this.round = round;
 	}
-	
+	public int getPlayerPoints() {
+		return playerPoints;
+	}
+
+	public void setPlayerPoints(int playerPoints) {
+		this.playerPoints = playerPoints;
+	}
 	
 }

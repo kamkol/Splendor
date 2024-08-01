@@ -7,4 +7,5 @@ import com.splendor.entity.Player;
 public interface PlayerRepository extends JpaRepository<Player, Long>{
 
 	
+	
 }
