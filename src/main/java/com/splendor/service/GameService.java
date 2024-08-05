@@ -36,6 +36,7 @@ public class GameService {
 	}
 	
 	private List<Player> initializePlayers() {
+		//create new players
 		Player player1 = new Player("Player 1");
 		Player player2 = new Player("Player 2");
 		return List.of(player1, player2);
