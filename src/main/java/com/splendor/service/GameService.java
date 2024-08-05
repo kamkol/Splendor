@@ -26,7 +26,6 @@ public class GameService {
 
 
 	public void startNewGame() {
-		// TODO Auto-generated method stub
 		//start new game
 		Game newGame = new Game();
 		gameRepository.save(newGame);
@@ -44,7 +43,6 @@ public class GameService {
 
 
 	public List<Player> getAllPlayers() {
-		// TODO Auto-generated method stub
 		return playerRepository.findAll();
 	}
 	
